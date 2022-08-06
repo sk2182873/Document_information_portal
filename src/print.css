@@ -1,0 +1,38 @@
+@media print{
+    body{
+        visibility: hidden;
+    }
+
+    /** userinfo Print **/
+    .print-table *{
+        visibility: visible;
+    }
+    .print-table{
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        border: 1px solid black;
+        margin-right: 10px;
+    }
+
+    .print-table .action{
+        display: none;
+    }
+}
+
+@media print and (landscape){
+    body{
+        visibility: hidden;
+    }
+
+    /** userinfo Print **/
+    .print-table *{
+        visibility: visible;
+    }
+    .print-table{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+       
+    }
+} 

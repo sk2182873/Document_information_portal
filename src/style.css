@@ -1,0 +1,122 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+}
+#wrapper {
+  overflow-x: hidden;
+  background-color: #10141c;
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  width: max-content;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+  background-color: #10141c;
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+#submenu{
+  position: absolute;
+  left: 1150px;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+  background-color: #f1f0f0;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+#menu-toggle {
+  cursor: pointer;
+}
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+#navbarDropdown {
+  color: #f10086;
+}
+
+.list-group-item{
+  transition: all 0.3s ease;
+}
+.list-group-item.active {
+  background-color: transparent;
+  color: #f10086;
+  font-weight: bold;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+@media screen and (max-width: 1600px){
+  #wrapper.toggled #submenu{
+    position: absolute;
+    left: 1550px;
+  }
+  #submenu{
+    position: absolute;
+    left: 1200px;
+  }
+}
+@media screen and (max-width: 1600px){
+  #wrapper.toggled #submenu{
+    position: absolute;
+    left: 1350px;
+  }
+  #submenu{
+    position: absolute;
+    left: 1100px;
+  }
+}
+@media screen and (max-width: 1400px){
+  #wrapper.toggled #submenu{
+    position: absolute;
+    left: 1200px;
+  }
+  #submenu{
+    position: absolute;
+    left: 950px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  #wrapper.toggled #submenu{
+    position: absolute;
+    left: 870px;
+  }
+  #submenu{
+    position: absolute;
+    left: 650px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #wrapper.toggled #submenu{
+    position: absolute;
+    left: 0px;
+  }
+  #submenu{
+    position: absolute;
+    left: 0px;
+  }
+}
+

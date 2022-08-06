@@ -1,0 +1,7 @@
+1. dirname("c:/testweb/home.php"): Return the path of the parent directory
+2. basename($path): Return filename from the specified path
+3. str_replace("world","Peter","Hello world!"): The str_replace() function replaces some characters with some other characters in a string.
+4. path_info("filename or path"): Get information about a file path.
+5. glob("*.txt"): Return an array of filenames or directories that matches the specified pattern 
+6. unlink(filename, context): The unlink() function deletes a file.
+7. rename(old, new, context): The rename() function renames a file or directory.
